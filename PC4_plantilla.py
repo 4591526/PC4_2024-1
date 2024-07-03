@@ -26,7 +26,7 @@ sidebar = st.sidebar
 # Pero, a diferencia de st.markdown, el texto estará alineado a la izquierda y no podrás cambiar el color del texto.
 
 # La función st.markdown permite centrar y agrandar la letra del título de la web en Streamlit.
-st.markdown("<h1 style='text-align: center;'>El blog de una luciérnaga</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Blog de despedida 2024-I</h1>", unsafe_allow_html=True)
 
 
 # <h1 style='text-align: center;'>Nombre de tu blog</h1>: Esto es una cadena de código HTML. 
@@ -39,15 +39,14 @@ st.markdown("<h1 style='text-align: center;'>El blog de una luciérnaga</h1>", u
 # Por defecto, streamlit no permite HTML en el texto de Markdown por razones de seguridad. 
 # Sin embargo, establecer unsafe_allow_html en True permite el uso de HTML.
 
-# Creamos dos columnas separadas para la imagen y el texto
-col1, col2 = st.columns(2)
+
 
 # col1, col2 = st.columns(2): Esta línea está creando dos columnas en la interfaz de usuario de la aplicación web. 
 # La función st.columns toma un número entero como argumento que especifica el número de columnas que se deben crear. 
 # Las columnas creadas se asignan a las variables col1 y col2.
 
 # En la primera columna colocamos la imagen
-col1.image("ellie.png", caption='Ellie Williams', width=300)
+st.video("ppc-2024-1.mp4")
 
 # col1.image("ellie.png", caption='Ellie', width=300): Esta línea está colocando una imagen en la primera columna (col1). 
 # La función image toma como primer argumento la ruta de la imagen que se va a mostrar. 
@@ -59,18 +58,7 @@ col1.image("ellie.png", caption='Ellie Williams', width=300)
 # Deben presentarse: ¿Quién eres?, ¿De dónde eres?, ¿Qué estudias?, ¿Qué te gusta de tu carrera?, 
 # ¿Qué te gustaría hacer en el futuro?, ¿Qué te gusta hacer en tu tiempo libre?
 
-texto = """
-Soy Ellie Williams, nacida en un mundo devastado por una pandemia que convierte a los humanos en monstruos infectados.
-Desde pequeña, he aprendido a sobrevivir en este entorno hostil, y a los 14 años descubrí que soy inmune 
-al hongo que causa la infección. Esta inmunidad me convirtió en una pieza clave en la búsqueda de una cura, 
-pero también me ha llevado por un camino lleno de pérdidas y traumas. Mi relación con Joel, quien se convirtió 
-en mi protector y figura paterna, me ha marcado profundamente. Ahora, como joven adulta, navego por un mundo brutal, 
-luchando con mi identidad y mi deseo de venganza, mientras busco un propósito y un atisbo de esperanza en medio del caos.
-"""
 
-# Las comillas triples (""") en Python se utilizan para definir cadenas multilínea.
-# Mostramos el texto
-col2.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto}</div>", unsafe_allow_html=True)
 
 # <div style='text-align: justify; font-size: 15px;'>{texto}</div>: Esta es una cadena de código HTML. 
 # La etiqueta <div> se utiliza para agrupar contenido en HTML. 
@@ -89,7 +77,7 @@ col2.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto}</div>
 # ¿Qué te gustaría hacer con la programación en el futuro? 
 
 # Agregamos un subtítulo
-st.markdown("<h2 style='text-align: center;'>Mi experiencia aprendiendo a programar 💻</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'>Su aprendizaje a través de mis ojos 💻</h2>", unsafe_allow_html=True)
 
 # <h2 style='text-align: center;'>Mi experiencia aprendiendo a programar 💻</h2>: Esta es una cadena de código HTML.
 # La etiqueta <h2> se utiliza para el encabezado secundario de una página web.
@@ -114,6 +102,62 @@ siento esa misma satisfacción que sentía al superar un obstáculo en el mundo 
 # Mostramos el texto
 st.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>", unsafe_allow_html=True)
 
+codigo = st.text_input("Escribe tu código")
+if codigo:
+    if codigo == '20190378':
+        st.markdown("<a href='https://pc4lucia.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20191384':
+        st.markdown("<a href='https://pensamiento-pc4.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20196389':
+        st.markdown("<a href='https://miblog.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20196400':
+        st.markdown("<a href='https://miblogandrea.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20197090':
+        st.markdown("<a href='https://samantapc4.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20201526':
+        st.markdown("<a href='https://blog-programando-mar-casabonne-pc4.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20201750':
+        st.markdown("<a href='https://mi-experiencia-como-desarrollera-aprendiendo-a-programar.streamlit.app' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20206004':
+        st.markdown("<a href='https://github.com/Panccho23710/LuisDiaz' target='_blank'>Haz clic aquí para visitar el repositorio de GitHub</a>", unsafe_allow_html=True)
+    elif codigo == '20211427':
+        st.markdown("<a href='https://lucianita080504.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20211974':
+        st.markdown("<a href='https://experiencia-de-programacion.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20212192':
+        st.markdown("<a href='https://pc4linknose.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20212370':
+        st.markdown("<a href='https://valenhuaroc-pc4-amorodioconpython.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20216214':
+        st.markdown("<a href='https://casiiita-uwu.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20216435':
+        st.markdown("<a href='https://rorito-pc4.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20216736':
+        st.markdown("<a href='https://tratandodeprogramarsindesprogramarteelcerebro.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20216824':
+        st.markdown("<a href='https://camilavalderramapc4.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20220276':
+        st.markdown("<a href='https://pc4alvacciara.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20220407':
+        st.markdown("<a href='https://apublicistcodingjourney.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20220951':
+        st.markdown("<a href='https://pensamiento-computacional-pc4.streamlit.app' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20221285':
+        st.markdown("<a href='https://las-pythonventuras-con-ainhoa-pc4.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20221338':
+        st.markdown("<a href='https://github.com/fefeporras/PorrasPC4/tree/main' target='_blank'>Haz clic aquí para visitar el repositorio de GitHub</a>", unsafe_allow_html=True)
+    elif codigo == '20221531':
+        st.markdown("<a href='https://unpocodelavidadepaula.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20223396':
+        st.markdown("<a href='https://v-log-python-monica.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20224944':
+        st.markdown("<a href='https://blogcito-sweet-de-programacion-harooo.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    elif codigo == '20224983':
+        st.markdown("<a href='https://practica-para-la-practicante-wavi.streamlit.app/' target='_blank'>Haz clic aquí para visitar el blog</a>", unsafe_allow_html=True)
+    else:
+        st.write("Código incorrecto")
+
+
 # <div style='text-align: justify; font-size: 15px;'>{texto_2}</div>: Esta es una cadena de código HTML.
 # La etiqueta <div> se utiliza para agrupar contenido en HTML.
 # En este caso, el texto está justificado (text-align: justify;).
@@ -124,46 +168,13 @@ st.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>
 # En este caso, {texto_2} se reemplaza por el valor de la variable texto_2.
 
 # Agregamos un subtítulo en la barra lateral
-sidebar.markdown("<h1 style='text-align: center;'>Primeros análisis con bases de datos lingúísticas</h1>", unsafe_allow_html=True)
+sidebar.markdown("<h1 style='text-align: center;'>Repositorio del curso y páginas de las librerías importantes</h1>", unsafe_allow_html=True)
 
-# <h1 style='text-align: center;'>Los análisis de Ellie</h1>: Esta es una cadena de código HTML.
-# La etiqueta <h1> se utiliza para el encabezado principal de una página web.
-# El texto está centrado (text-align: center;).
-# El texto dentro de las etiquetas <h1> ("Los análisis de Ellie") es el contenido del encabezado.
+st.sidebar.button("Repositorio del curso" ,"https://github.com/4591526")
 
-# Creamos una lista de gráficos
-graficos = ['Gráfico de barras verticales', 'Gráfico de barras horizontales', 'Mapa']
+st.sidebar.button("Matplotlib" ,"https://matplotlib.org/stable/gallery/index.html")
 
-# Creamos un cuadro de selección en la barra lateral
-grafico_seleccionado = sidebar.selectbox('Selecciona un gráfico', graficos)
-# El cuadro de selección se crea con la función selectbox.
-# El primer argumento es el texto que se muestra en el cuadro de selección.
-# El segundo argumento es una lista de opciones que se pueden seleccionar.
-# En este caso, las opciones son los elementos de la lista graficos.
-# La opción seleccionada se asigna a la variable grafico_seleccionado.
-# La variable grafico_seleccionado se utiliza para mostrar el gráfico correspondiente en la aplicación web.
-# La función selectbox se utiliza para crear un cuadro de selección en la barra lateral.
+st.sidebar.button("Geopandas" ,"https://geopandas.org/en/stable/gallery/index.html")
 
-# Mostramos el gráfico seleccionado
-if grafico_seleccionado == 'Gráfico de barras verticales':
-    sidebar.markdown("<div style='text-align: justify; font-size: 20px;'>Este gráfico muestra la cantidad de lenguas aisladas en Grambank, Sails y Wals</div>", unsafe_allow_html=True)
-    sidebar.image("aisladas_base_datos.png", caption='Lenguas aisladas en cada Base de Datos', width=500)
-    pass
-elif grafico_seleccionado == 'Gráfico de barras horizontales':
-    sidebar.markdown("<div style='text-align: justify'>Este gráfico muestra la cantidad de lenguas sudamericanas por familia lingüística en Grambank. Asimismo, en este gráfico se agrupa a las lenguas aisladas dentro una familia 'Isolate'</div>", unsafe_allow_html=True)
-    sidebar.image("lengua_familia_GB.png", caption='Lenguas sudamericanas por Familia lingüísitca', width=500)
-    pass
-elif grafico_seleccionado == 'Mapa':
-    sidebar.markdown("<div style='text-align: justify'>Este mapa muestra la ubicación de las leguas sudamericanas por familia lingúística y solo se etiquetan las lenguas aisladas en Sails</div>", unsafe_allow_html=True)
-    sidebar.image("mapa_familias_aisladas_S.jpg", caption='Mapa de las lenguas sudamericanas', width=500)
-    pass
 
-# if grafico_seleccionado == 'Gráfico de Macroareas':: Esta línea verifica si la opción seleccionada es 'Gráfico de Macroareas'.
-# Si es así, se ejecuta el código dentro del bloque if.
-# En este caso, se muestra un texto y una imagen correspondientes al gráfico de Macroareas.
-# El texto y la imagen se muestran en la barra lateral.
-# La función markdown se utiliza para mostrar el texto en la barra lateral.
-# La función image se utiliza para mostrar la imagen en la barra lateral.
-# El argumento caption se utiliza para proporcionar un pie de foto a la imagen.
-# El argumento width se utiliza para especificar el ancho de la imagen.
-# La palabra clave pass se utiliza para indicar que no se debe hacer nada en caso de que la opción seleccionada no sea 'Gráfico de Macroareas'.
+
