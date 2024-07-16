@@ -158,7 +158,7 @@ if codigo:
 sidebar.markdown("<h1 style='text-align: center;'>Repositorio del curso y páginas de las librerías y programas importantes</h1>", unsafe_allow_html=True)
 
 
-repositorio = f'<a href="https://github.com/4591526" target="_blank"><button>Repositorio del curso</button></a>'
+repositorio = f'<a href="https://github.com/4591526/1CCO19-2024-I" target="_blank"><button>Repositorio del curso</button></a>'
 libreria1 = f'<a href="https://matplotlib.org/stable/gallery/index.html" target="_blank"><button>Matplotlib</button></a>'
 libreria2 = f'<a href="https://geopandas.org/en/stable/gallery/index.html" target="_blank"><button>Geopandas</button></a>'
 libreria3 = f'<a href="https://python-visualization.github.io/folium/latest/getting_started.html" target="_blank"><button>Folium</button></a>'
@@ -166,7 +166,7 @@ libreria4 = f'<a href="https://seaborn.pydata.org/examples/index.html" target="_
 libreria5 = f'<a href="https://plotly.com/python/plotly-express/" target="_blank"><button>Plotly Express</button></a>'
 libreria6 = f'<a href="https://streamlit.io" target="_blank"><button>Streamlit</button></a>'
 libreria2 = f'<a href="https://geopandas.org/en/stable/gallery/index.html" target="_blank"><button>Geopandas</button></a>'
-programa = f'<a href="https://code.visualstudio.com" target="_blank"><button>Geopandas</button></a>'
+programa = f'<a href="https://code.visualstudio.com" target="_blank"><button>Visual Studio Code</button></a>'
 
 with st.sidebar:
     st.markdown(repositorio, unsafe_allow_html=True)
