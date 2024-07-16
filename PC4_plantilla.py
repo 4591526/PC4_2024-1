@@ -176,5 +176,10 @@ st.sidebar.button("Matplotlib" ,"https://matplotlib.org/stable/gallery/index.htm
 
 st.sidebar.button("Geopandas" ,"https://geopandas.org/en/stable/gallery/index.html")
 
+st.sidebar.button("Plotly express" ,"https://plotly.com/python/plotly-express/")
+
+st.sidebar.button("Seaborn" ,"https://seaborn.pydata.org/examples/index.html")
+
+st.sidebar.button("Folium" ,"https://python-visualization.github.io/folium/latest/getting_started.html")
 
 
