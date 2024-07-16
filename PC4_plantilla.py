@@ -77,7 +77,7 @@ st.video("ppc-2024-1.mp4")
 # ¿Qué te gustaría hacer con la programación en el futuro? 
 
 # Agregamos un subtítulo
-st.markdown("<h2 style='text-align: center;'>Su aprendizaje a través de mis ojos 💻</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'> Buscador de blogs 💻</h2>", unsafe_allow_html=True)
 
 # <h2 style='text-align: center;'>Mi experiencia aprendiendo a programar 💻</h2>: Esta es una cadena de código HTML.
 # La etiqueta <h2> se utiliza para el encabezado secundario de una página web.
@@ -88,19 +88,6 @@ st.markdown("<h2 style='text-align: center;'>Su aprendizaje a través de mis ojo
 # Sin embargo, establecer unsafe_allow_html en True permite el uso de HTML.
 # Puedes agregar emojis en el texto de Markdown utilizando códigos de emoji.
 
-# Agregar un  texto para la respuesta
-texto_2 = """
-Nunca pensé que aprendería a programar, y mucho menos en Python, pero aquí estoy, sumergida en líneas de código. 
-Al principio, todo parecía un montón de símbolos y palabras sin sentido. 
-Pero cuanto más practicaba, más empezaba a entender la lógica detrás de cada comando. 
-Me recordó un poco a aprender a sobrevivir: tienes que entender las reglas del juego y 
-luego encontrar la manera de usar esas reglas a tu favor. 
-Resolver problemas con código es como resolver un rompecabezas, y cada vez que consigo que mi script funcione, 
-siento esa misma satisfacción que sentía al superar un obstáculo en el mundo real. 
-"""
-
-# Mostramos el texto
-st.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>", unsafe_allow_html=True)
 
 codigo = st.text_input("Escribe tu código")
 if codigo:
