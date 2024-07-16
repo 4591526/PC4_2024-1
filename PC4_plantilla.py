@@ -170,7 +170,7 @@ if codigo:
 # Agregamos un subtítulo en la barra lateral
 sidebar.markdown("<h1 style='text-align: center;'>Repositorio del curso y páginas de las librerías importantes</h1>", unsafe_allow_html=True)
 
-st.sidebar.button("Repositorio del curso" ,"https://github.com/4591526")
+st.sidebar.button("Repositorio del curso" ,"https://github.com/4591526/1CCO19-2024-I")
 
 st.sidebar.button("Matplotlib" ,"https://matplotlib.org/stable/gallery/index.html")
 
