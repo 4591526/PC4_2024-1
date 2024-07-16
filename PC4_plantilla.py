@@ -77,7 +77,7 @@ st.video("ppc-2024-1.mp4")
 # ¿Qué te gustaría hacer con la programación en el futuro? 
 
 # Agregamos un subtítulo
-st.markdown("<h2 style='text-align: center;'> Buscador de blogs 💻</h2>", unsafe_allow_html=True)
+st.subheader("🔎 Buscador de blog PC4")
 
 # <h2 style='text-align: center;'>Mi experiencia aprendiendo a programar 💻</h2>: Esta es una cadena de código HTML.
 # La etiqueta <h2> se utiliza para el encabezado secundario de una página web.
@@ -155,18 +155,28 @@ if codigo:
 # En este caso, {texto_2} se reemplaza por el valor de la variable texto_2.
 
 # Agregamos un subtítulo en la barra lateral
-sidebar.markdown("<h1 style='text-align: center;'>Repositorio del curso y páginas de las librerías importantes</h1>", unsafe_allow_html=True)
+sidebar.markdown("<h1 style='text-align: center;'>Repositorio del curso y páginas de las librerías y programas importantes</h1>", unsafe_allow_html=True)
 
-st.sidebar.button("Repositorio del curso" ,"https://github.com/4591526/1CCO19-2024-I")
 
-st.sidebar.button("Matplotlib" ,"https://matplotlib.org/stable/gallery/index.html")
+repositorio = f'<a href="https://github.com/4591526" target="_blank"><button>Repositorio del curso</button></a>'
+libreria1 = f'<a href="https://matplotlib.org/stable/gallery/index.html" target="_blank"><button>Matplotlib</button></a>'
+libreria2 = f'<a href="https://geopandas.org/en/stable/gallery/index.html" target="_blank"><button>Geopandas</button></a>'
+libreria3 = f'<a href="https://python-visualization.github.io/folium/latest/getting_started.html" target="_blank"><button>Folium</button></a>'
+libreria4 = f'<a href="https://seaborn.pydata.org/examples/index.html" target="_blank"><button>Seaborn</button></a>'
+libreria5 = f'<a href="https://plotly.com/python/plotly-express/" target="_blank"><button>Plotly Express</button></a>'
+libreria6 = f'<a href="https://streamlit.io" target="_blank"><button>Streamlit</button></a>'
+libreria2 = f'<a href="https://geopandas.org/en/stable/gallery/index.html" target="_blank"><button>Geopandas</button></a>'
+programa = f'<a href="https://code.visualstudio.com" target="_blank"><button>Geopandas</button></a>'
 
-st.sidebar.button("Geopandas" ,"https://geopandas.org/en/stable/gallery/index.html")
-
-st.sidebar.button("Plotly express" ,"https://plotly.com/python/plotly-express/")
-
-st.sidebar.button("Seaborn" ,"https://seaborn.pydata.org/examples/index.html")
-
-st.sidebar.button("Folium" ,"https://python-visualization.github.io/folium/latest/getting_started.html")
+with st.sidebar:
+    st.markdown(repositorio, unsafe_allow_html=True)
+    st.markdown(libreria1,  unsafe_allow_html=True)
+    st.markdown(libreria2,  unsafe_allow_html=True)
+    st.markdown(libreria3,  unsafe_allow_html=True)
+    st.markdown(libreria4,  unsafe_allow_html=True)
+    st.markdown(libreria5,  unsafe_allow_html=True)
+    st.markdown(libreria6,  unsafe_allow_html=True)
+    st.markdown(libreria2,  unsafe_allow_html=True)
+    st.markdown(programa,  unsafe_allow_html=True)
 
 
