@@ -155,7 +155,7 @@ if codigo:
 # En este caso, {texto_2} se reemplaza por el valor de la variable texto_2.
 
 # Agregamos un subtítulo en la barra lateral
-sidebar.markdown("<h1 style='text-align: center;'>Repositorio del curso y páginas de las librerías y programas importantes</h1>", unsafe_allow_html=True)
+sidebar.markdown("<h1 style='text-align: center;'>Repositorio del curso, páginas de las librerías y programas importantes</h1>", unsafe_allow_html=True)
 
 
 repositorio = f'<a href="https://github.com/4591526/1CCO19-2024-I" target="_blank"><button>Repositorio del curso</button></a>'
